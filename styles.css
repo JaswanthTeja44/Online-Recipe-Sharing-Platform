@@ -1,0 +1,92 @@
+    :root {
+      --main-bg: #000000;
+      --accent: #ff00009c;
+      --text-color: #333;
+      --border-color: #ddd;
+      --card-hover: #fff7f2;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--main-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      background: white;
+      padding: 1.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    input, textarea, select, button {
+      font-size: 1rem;
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: 1px solid var(--border-color);
+      width: 100%;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ff5c3b;
+    }
+
+    .recipes {
+      margin-top: 2rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .recipe-card {
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+
+    .user-section {
+      margin-bottom: 2rem;
+      text-align: right;
+    }
+
+    .recipe-image {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+    }
